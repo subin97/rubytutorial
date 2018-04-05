@@ -72,34 +72,29 @@
 
 4. Private & Public
     ```
-    class Person                           # Person class 지정
-        def initialize(name, age)
-            @name = name
-            @age = age
+   class Person
+      def run
+        puts your_password
+      end
+      
+      public
+      def check_password(input)
+        if your_password==input
+          puts "비밀번호가 맞습니다."
+        else
+          puts "비밀번호를 다시 입력해 주세요."
         end
-        
-        public
-        def run
-            puts "#{@age}살의 #{@name}가 달립니다. "
-            puts your_password  # 오브젝트 안에서 접근 가능 
-        end
-        def check_passworld(input)
-            if your_password==input
-                puts "비밀번호가 맞습니다"
-            else
-                puts "비밀번호를 다시 입력해 주세요"
-            end
-        end
-        private
-        def your_password
-            @password="123456789"
-        end
+      end
+      
+      private
+      def your_password
+        @passworld="123456789"
+      end
     end
     
-    p=Person.new('도도',20)
-    p.run
+    p=Person.new
     # puts p.your_password
-    p.check_passworld("123456789")
+    p.check_password("123456789")
     ```
 
 5. Live Coding - 로또 추첨하기  
