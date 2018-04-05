@@ -135,6 +135,9 @@
     puts hashhh[:array]                             # 1, 2, 3이 차례로 출력된다.
     puts hashhh[:string]                            # hello가 출력된다.
     ```
+    
+9-1. 심볼
+    - [심볼 관련 포스트](http://podor.egloos.com/466893)
 
 10. 연산자
     - [연산자 관련 포스트](http://seungdols.tistory.com/324?category=575817)
